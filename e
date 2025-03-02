@@ -1,7 +1,7 @@
 local a = game.ReplicatedStorage
-local b = "Check"
+local b = a.Storage.Remotes.Check
 
-a[b].OnClientInvoke = function()
+b.OnClientInvoke = function()
 	local c = 1 + 1
 	local d = c - 1
 	return d == 1
